@@ -9,7 +9,7 @@ jobs:
   build:
     permissions: write-all
     name: Edgeble-6 Bookworm Model runner
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
@@ -45,7 +45,7 @@ jobs:
       run: |
 
         echo "Clone builder.."
-        git clone git@gitlab.com:edgeble/model/bookworm/builder.git builder-yoloAll && cd builder-yoloAll
+        git clone git@gitlab.com:lochan8/builder.git builder-yoloAll && cd builder-yoloAll
 
         # Set the github_action value
         github_action=true
